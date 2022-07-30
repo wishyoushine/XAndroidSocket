@@ -1,11 +1,24 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+    
     repositories {
+        // ali
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+        
+        // 163 wangyi
+        maven { url 'http://mirrors.163.com/maven/repository/maven-central/' }
+        
+        // tencent
+        maven { url 'http://mirrors.cloud.tencent.com/nexus/repository/maven-public/' }
+        
+        google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.0'
+        classpath 'com.android.tools.build:gradle:3.6.1'
+        
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -14,7 +27,19 @@ buildscript {
 
 allprojects {
     repositories {
+        // ali
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+        
+        // 163 wangyi
+        maven { url 'http://mirrors.163.com/maven/repository/maven-central/' }
+        
+        // tencent
+        maven { url 'http://mirrors.cloud.tencent.com/nexus/repository/maven-public/' }
+        
+        google()
         jcenter()
+        
     }
 }
 

@@ -196,7 +196,7 @@ public class XUdp extends BaseXSocket {
 //                                e.printStackTrace();
                                 notifyErrorListener("发送消息失败", e);
                             }
-                        } catch (SocketException e) {
+                        } catch (Exception e) {
                             notifyErrorListener("发送消息失败", e);
 //                            e.printStackTrace();
                         }
